@@ -67,3 +67,7 @@ exported = false // dùng để ẩn hoặc hiển thị một repository trong 
 @Hidden: Khi đánh dấu một phương thức hoặc một controller với @Hidden, nó sẽ không xuất hiện trong tài liệu OpenAPI được tạo ra.
 
 @Configuration + @Bean: 
+
+
+## Thực nghiệm
+- Nếu không có @Configuration, thì Info serviceInfo = new Info().title(title).version("1.0").description("Documentation API SUCCESS v1.0"); sẽ không hoạt động
