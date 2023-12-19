@@ -80,7 +80,9 @@ exported = false // dùng để ẩn hoặc hiển thị một repository trong 
 - Nếu muốn tùy chỉnh hoặc không sử dụng DataSource, bạn có thể thêm exclude = DataSourceAutoConfiguration.class.
 - Ngược lại, nếu muốn sử dụng cấu hình mặc định, bạn có thể xóa exclude = DataSourceAutoConfiguration.class.
 # Solution for Notification:
-- Using Solution for fix Configuration
+- Using Solution for Configuration
 - Vô hiệu 2 trường trong application.yml:
   - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
   - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+# Solution for Search:
+- Using Solution for Notification
