@@ -71,3 +71,12 @@ exported = false // dùng để ẩn hoặc hiển thị một repository trong 
 
 ## Thực nghiệm
 - Nếu không có @Configuration, thì Info serviceInfo = new Info().title(title).version("1.0").description("Documentation API SUCCESS v1.0"); sẽ không hoạt động
+
+# Solution for fix Configuration:
+- in @SpringBootApplication(exclude = DataSourceAutoConfiguration.class), DELETE (exclude = DataSourceAutoConfiguration.class)
+- addon 'com.h2database:h2' to build.gradle
+## Nguyên nhân lỗi:
+- Khi sử dụng @SpringBootApplication, nếu không có cấu hình cụ thể, Spring Boot tự động cấu hình nhiều thứ, bao gồm DataSource để kết nối cơ sở dữ liệu.
+- Nếu muốn tùy chỉnh hoặc không sử dụng DataSource, bạn có thể thêm exclude = DataSourceAutoConfiguration.class.
+- Ngược lại, nếu muốn sử dụng cấu hình mặc định, bạn có thể xóa exclude = DataSourceAutoConfiguration.class.
+
