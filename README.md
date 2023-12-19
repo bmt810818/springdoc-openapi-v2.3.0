@@ -79,7 +79,7 @@ exported = false // dùng để ẩn hoặc hiển thị một repository trong 
 - Khi sử dụng @SpringBootApplication, nếu không có cấu hình cụ thể, Spring Boot tự động cấu hình nhiều thứ, bao gồm DataSource để kết nối cơ sở dữ liệu.
 - Nếu muốn tùy chỉnh hoặc không sử dụng DataSource, bạn có thể thêm exclude = DataSourceAutoConfiguration.class.
 - Ngược lại, nếu muốn sử dụng cấu hình mặc định, bạn có thể xóa exclude = DataSourceAutoConfiguration.class.
-## Solution for Notification:
+# Solution for Notification:
 - Using Solution for fix Configuration
 - Vô hiệu 2 trường trong application.yml:
   - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
